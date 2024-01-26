@@ -1,0 +1,95 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+.header{
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 13px 4%;
+    background-color: #f6f6f6;
+    width: 100%;
+    box-shadow: 0 0 10px #ddd;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative; 
+}
+.header .logo {
+    color: cornflowerblue;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .links {
+    display: flex;
+}
+
+.header .links > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    color: black;
+    padding: 0 30px;
+    overflow: hidden;
+}
+.header .links > li > a:hover{
+    color:  cornflowerblue;
+    background-color: #fafafa;
+}
+/* cash */
+.cash {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.cash .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 40px;
+}
+.cash span {
+    font-weight: bold;
+    font-size: 18px;
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
